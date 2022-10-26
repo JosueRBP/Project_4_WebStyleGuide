@@ -5,6 +5,7 @@
 // Colors (5 colors)
 $white: #fff;
 $midgray: #777;
+$lightgray: #ccc;
 $aquablue: #58e1c1;
 $lightblue: #51ddfc;
 $lightblueviolet: #927bc1;
@@ -15,4 +16,13 @@ $font-stack-primary: 'Lato', sans-serif;
 //Media Query Breakpoints
 $breakpoints: (
     'breaker': 768px,
+);
+
+//Buttons Color Map:
+$colors: (
+  'default': $lightblue,
+  'error': #e4757a,
+  'info': $lightblueviolet,
+  'success': #63cc82,
+  'warning': #fd7856,
 );

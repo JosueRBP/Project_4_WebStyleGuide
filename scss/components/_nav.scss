@@ -18,7 +18,7 @@
     transition: background-color .2s ease-in-out, color .2s ease-in-out;
     &:hover { /*Parent Selector Used Here Verify: 'scss/components/_nav.scss' */
       color: $white;
-      background-color: lighten($aquablue, 10%); /*Sass lighten() function used here*/
+      background-color: $aquablue;
     }
   }
   

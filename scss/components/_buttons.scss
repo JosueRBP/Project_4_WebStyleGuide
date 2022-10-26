@@ -11,24 +11,13 @@
     text-transform: uppercase;
     border-radius: 5px;
   }
-  
-  .default {
-    background-color: #51ddfc;
+  /*Sass @each Loop used here*/
+  /*Sass lighten() function used here*/
+  @each $color, $value in $colors {
+    .#{$color} {
+      background-color: $value;
+      &:hover {
+        background-color: lighten($value, 15%);
+      }
+    } 
   }
-  
-  .error {
-    background-color: #e4757a;
-  }
-  
-  .info {
-    background-color: #927bc1;
-  }
-  
-  .success {
-    background-color: #63cc82;
-  }
-  
-  .warning {
-    background-color: #fd7856;
-  }
-  
